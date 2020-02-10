@@ -1,14 +1,10 @@
 {
-  "name": "vue-quill-editor",
+  "name": "@sankartw/vue-quill-editor",
   "description": "Quill editor component for Vue",
-  "version": "3.0.6",
+  "version": "1.0.1",
   "license": "MIT",
   "private": false,
-  "author": {
-    "name": "Surmon",
-    "email": "surmon@foxmail.com",
-    "url": "https://surmon.me"
-  },
+  "author": "Surmon <surmon@foxmail.com> (https://surmon.me)",
   "bugs": {
     "url": "https://github.com/surmon-china/vue-quill-editor/issues"
   },
@@ -27,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/surmon-china/vue-quill-editor.git"
+    "url": "git+https://github.com/surmon-china/vue-quill-editor.git"
   },
   "keywords": [
     "vue-quill-editor",
@@ -138,5 +134,9 @@
   "engines": {
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
   }
 }
