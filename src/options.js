@@ -1,4 +1,12 @@
-
+const fonts = [
+  "MingLiU",
+  "PMingLiU",
+  "DFKai-sb",
+  "Microsoft-JhengHei",
+  "Arial",
+  "Times-New-Roman",
+  "sans-serif"
+];
 export default {
   theme: 'snow',
   boundary: document.body, 
@@ -14,7 +22,7 @@ export default {
       [{ 'size': ['small', false, 'large', 'huge'] }],
       [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
       [{ 'color': [] }, { 'background': [] }],
-      [{ 'font': [] }],
+      [{ 'font': fonts }],
       [{ 'align': [] }],
       ['clean'],
       ['link', 'image', 'video']

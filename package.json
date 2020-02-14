@@ -1,7 +1,7 @@
 {
   "name": "@sankartw/vue-quill-editor",
   "description": "Quill editor component for Vue",
-  "version": "1.0.1",
+  "version": "1.0.7",
   "license": "MIT",
   "private": false,
   "author": "Surmon <surmon@foxmail.com> (https://surmon.me)",
@@ -45,8 +45,7 @@
   },
   "dependencies": {
     "object-assign": "^4.1.1",
-    "quill": "^2.0.0-dev.3",
-    "quill-2.0-dev": "^2.0.0-dev.3"
+    "quill": "^2.0.0-dev.3"
   },
   "expDependencies": {
     "node-sass": "^4.7.2",
