@@ -26,7 +26,7 @@ export default {
       [{ 'align': [] }],
       ['clean'],
       ['link', 'image', 'video']
-    ]
+    ],
   },
   placeholder: 'Insert text here ...',
   readOnly: false

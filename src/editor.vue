@@ -10,47 +10,36 @@
 import _Quill from "quill";
 import defaultOptions from "./options";
 const Quill = window.Quill || _Quill;
-const Font = Quill.import("formats/font");
-Font.whitelist = fonts; //将字体加入到白名单
-// Quill.register(Font, true);
-// var DirectionAttribute = Quill.import("attributors/attribute/direction");
-// Quill.register(DirectionAttribute, true);
+const fonts = [
+  "MingLiU",
+  "PMingLiU",
+  "DFKai-sb",
+  "Microsoft-JhengHei",
+  "Arial",
+  "Times-New-Roman",
+  "sans-serif"
+];
+const DirectionAttribute = Quill.import("attributors/attribute/direction");
+Quill.register(DirectionAttribute, true);
 
-// var AlignClass = Quill.import("attributors/class/align");
-// Quill.register(AlignClass, true);
+const AlignStyle = Quill.import("attributors/style/align");
+Quill.register(AlignStyle, true);
 
-// var BackgroundClass = Quill.import("attributors/class/background");
-// Quill.register(BackgroundClass, true);
+const BackgroundStyle = Quill.import("attributors/style/background");
+Quill.register(BackgroundStyle, true);
 
-// var ColorClass = Quill.import("attributors/class/color");
-// Quill.register(ColorClass, true);
+const ColorStyle = Quill.import("attributors/style/color");
+Quill.register(ColorStyle, true);
 
-// var DirectionClass = Quill.import("attributors/class/direction");
-// Quill.register(DirectionClass, true);
+const DirectionStyle = Quill.import("attributors/style/direction");
+Quill.register(DirectionStyle, true);
 
-// var FontClass = Quill.import("attributors/class/font");
-// Quill.register(FontClass, true);
+const FontStyle = Quill.import("attributors/style/font");
+FontStyle.whitelist = fonts;
+Quill.register(FontStyle, true);
 
-// var SizeClass = Quill.import("attributors/class/size");
-// Quill.register(SizeClass, true);
-
-// var AlignStyle = Quill.import("attributors/style/align");
-// Quill.register(AlignStyle, true);
-
-// var BackgroundStyle = Quill.import("attributors/style/background");
-// Quill.register(BackgroundStyle, true);
-
-// var ColorStyle = Quill.import("attributors/style/color");
-// Quill.register(ColorStyle, true);
-
-// var DirectionStyle = Quill.import("attributors/style/direction");
-// Quill.register(DirectionStyle, true);
-
-// var FontStyle = Quill.import("attributors/style/font");
-// Quill.register(FontStyle, true);
-
-// var SizeStyle = Quill.import("attributors/style/size");
-// Quill.register(SizeStyle, true);
+const SizeStyle = Quill.import("attributors/style/size");
+Quill.register(SizeStyle, true);
 // pollfill
 if (typeof Object.assign != "function") {
   Object.defineProperty(Object, "assign", {
